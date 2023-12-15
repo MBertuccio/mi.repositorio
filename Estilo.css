@@ -1,7 +1,7 @@
 body {
   background-color: whitesmoke;
   color: black;
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
   /* Fuente predeterminada para el cuerpo  */
 }
 
@@ -12,27 +12,29 @@ section {
   margin: 10px;
   border-radius: 6px;
 }
-.lista{
+
+.lista {
   list-style: none;
 }
+
 /* Estilo para los títulos de sección */
 h1 {
   font-family: "Times New Roman", Times, serif;
   color: black;
- 
+
 
 }
 
 h2 {
   font-family: "Arial", sans-serif;
   color: black;
-  
+
 }
 
 h3 {
   font-family: "Courier New", Courier, monospace;
   color: black;
-  
+
 }
 
 /* Estilos para otros elementos si es necesario */
@@ -87,11 +89,10 @@ header {
 }
 
 /* -------------------Links dentro del header ---------------MODIFICAR PARA QUE ESTEN ARRIBA A LA DEREHCA---------*/
-.links{
+.links {
   background-color: black;
   color: white !important;
   font-family: 'Times New Roman', Times, serif
-
 }
 
 
@@ -111,26 +112,31 @@ header {
 
 
 /*formato del contenedor*/
-.carousel-inner img{
-  width: 100%; 
+.carousel-inner img {
+  width: 100%;
   height: 500px;
-  
+
 }
-.carro{
+
+.carro {
   width: 100%;
   height: 500px;
   background-color: red;
 }
+
 .carousel-inner p {
- color: white;
- font-size: larger;
+  color: white;
+  font-size: larger;
 }
+
 .carousel-inner h5 {
   color: white;
- }
+}
+
 .contenedor {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Crear 3 columnas de igual ancho */
+  grid-template-columns: repeat(3, 1fr);
+  /* Crear 3 columnas de igual ancho */
   gap: 20px;
 }
 
@@ -138,7 +144,7 @@ header {
 .foto2,
 .foto3 {
   width: 100%;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .foto1 img,
@@ -168,7 +174,8 @@ header {
 
 .contenedor2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Crear 3 columnas de igual ancho */
+  grid-template-columns: repeat(3, 1fr);
+  /* Crear 3 columnas de igual ancho */
   gap: 20px;
 }
 
@@ -176,14 +183,16 @@ header {
 .tour2,
 .tour3 {
   width: 100%;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .tour1 img,
 .tour2 img,
 .tour3 img {
-  width: 100%; /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
-  height: auto; /* Mantener la proporción original de la imagen */
+  width: 100%;
+  /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
+  height: auto;
+  /* Mantener la proporción original de la imagen */
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -209,7 +218,8 @@ header {
 
 .contenedor3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Crear 3 columnas de igual ancho */
+  grid-template-columns: repeat(3, 1fr);
+  /* Crear 3 columnas de igual ancho */
   gap: 20px;
 }
 
@@ -217,7 +227,7 @@ header {
 .video2,
 .video3 {
   width: 30%;
-  
+
 
 
 }
@@ -225,8 +235,10 @@ header {
 .video1,
 .video2,
 .video3 {
-  width: 80%; /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
-  height: auto; /* Mantener la proporción original de la imagen */
+  width: 80%;
+  /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
+  height: auto;
+  /* Mantener la proporción original de la imagen */
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -251,24 +263,30 @@ header {
 
 .Contenedor4 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Crear 3 columnas de igual ancho */
-  gap: 20px; /* Espacio entre las columnas */
+  grid-template-columns: repeat(3, 1fr);
+  /* Crear 3 columnas de igual ancho */
+  gap: 20px;
+  /* Espacio entre las columnas */
 }
 
 .remera1,
 .remera2,
 .remera3 {
-  text-align: center; /* Alinear el texto al centro */
+  text-align: center;
+  /* Alinear el texto al centro */
 }
 
 .remera1 img,
 .remera2 img,
 .remera3 img {
-  width: 375px; /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
-  height: 500px; /* Mantener la proporción original de la imagen */
+  width: 375px;
+  /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
+  height: 500px;
+  /* Mantener la proporción original de la imagen */
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 10px; /* Espacio entre la imagen y el párrafo */
+  margin-bottom: 10px;
+  /* Espacio entre la imagen y el párrafo */
 }
 
 .Titulo {
@@ -283,23 +301,70 @@ header {
 .boton {
   background-color: black;
   text-align: justify;
-  
+
 }
 
 .boton p {
   color: whitesmoke;
 }
 
+
+
+/*-----SECCION SUBSCRIPCIÓN---*/
+
+
+form {
+  border: 4px solid #f1f1f1;
+}
+
+
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+
+input[type=submit] {
+  background-color: #d60707;
+  color: black;
+  border: none;
+  text-decoration: solid;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+
+
 /*---------------FOOTER------------------*/
 
 .pie a {
-  color:white
-  
+  color: white
 }
 
 
 .pie a {
   text-decoration: none;
-  color: white;  /* Puedes cambiar el color según tus preferencias */
+  color: white;
+  /* Puedes cambiar el color según tus preferencias */
   margin: 5px;
 }
