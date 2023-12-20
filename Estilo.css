@@ -115,6 +115,7 @@ header {
 .carousel-inner img {
   width: 100%;
   height: 500px;
+  
 
 }
 
@@ -145,6 +146,8 @@ header {
 .foto3 {
   width: 100%;
   box-sizing: border-box;
+  
+
 }
 
 .foto1 img,
@@ -209,48 +212,62 @@ header {
 
 /*------------------------------seccion video--------------------------------*/
 
-.Titulo {
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
 
+section {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.titulonoticia {
   text-align: center;
-  text-decoration: underline;
-  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  text-decoration: underline; // Nueva propiedad agregada
+  font-family: 'Times New Roman', Times, serif; // Nueva propiedad agregada
+}
+
+h2 {
+  color: #666;
 }
 
 .contenedor3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* Crear 3 columnas de igual ancho */
   gap: 20px;
 }
 
-.video1,
-.video2,
-.video3 {
-  width: 30%;
-
-
-
-}
-
-.video1,
-.video2,
-.video3 {
-  width: 80%;
-  /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
+.video1, .video2, .video3 {
+  width: 100%; // Ancho ajustado para ocupar toda la columna
   height: auto;
-  /* Mantener la proporción original de la imagen */
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
-  /* Espacio entre la imagen y el párrafo */
-
 }
 
-.video1,
-.video2,
-.video3 {
+iframe {
   width: 100%;
-  font-style: normal;
+}
+
+p {
+  color: #777;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
 }
 
 /*------------------------tienda---------------------------*/
