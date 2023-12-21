@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
   background-color: whitesmoke;
   color: black;
@@ -21,20 +23,16 @@ section {
 h1 {
   font-family: "Times New Roman", Times, serif;
   color: black;
-
-
 }
 
 h2 {
   font-family: "Arial", sans-serif;
   color: black;
-
 }
 
 h3 {
   font-family: "Courier New", Courier, monospace;
   color: black;
-
 }
 
 /* Estilos para otros elementos si es necesario */
@@ -68,61 +66,49 @@ footer a {
 
 .title {
   size: 20px;
-
 }
 
 /*----------------------------------------------Estilo del header------------------------ */
 header {
-
   text-align: center;
   text-decoration: underline;
-
 }
 
 .Titulo {
-  background-color: whitesmoke
+  background-color: whitesmoke;
 }
 
 .Titulo h2 {
-  font-family: 'Times New Roman', Times, serif;
-  color: black
+  font-family: "Times New Roman", Times, serif;
+  color: black;
 }
 
 /* -------------------Links dentro del header ---------------MODIFICAR PARA QUE ESTEN ARRIBA A LA DEREHCA---------*/
 .links {
   background-color: black;
   color: white !important;
-  font-family: 'Times New Roman', Times, serif
+  font-family: "Times New Roman", Times, serif;
 }
 
-
-
 /*------------------------------------ Sección Noticias------------------------------*/
-
 /*titulo*/
-
 .titulonoticia {
   text-align: center;
   text-decoration: underline;
   font-size: large;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
-
-
-
 
 /*formato del contenedor*/
 .carousel-inner img {
   width: 100%;
   height: 500px;
-
-
 }
 
 .carro {
   width: 100%;
   height: 500px;
-  background-color: red;
+  background-color: whitesmoke;
 }
 
 .carousel-inner p {
@@ -146,8 +132,6 @@ header {
 .foto3 {
   width: 100%;
   box-sizing: border-box;
-
-
 }
 
 .foto1 img,
@@ -167,12 +151,9 @@ header {
 }
 
 /*-----------------------------------------------seccion GIRAS -----------------------------------*/
-
-
 .titulo {
   text-align: center;
   text-decoration: underline;
-
 }
 
 .contenedor2 {
@@ -209,11 +190,9 @@ header {
   font-style: normal;
 }
 
-
 /*------------------------------seccion video--------------------------------*/
-
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
 }
 
@@ -230,7 +209,7 @@ section {
 h1 {
   color: #333;
   text-decoration: underline;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 h2 {
@@ -265,84 +244,81 @@ footer {
   text-align: center;
   padding: 10px;
   color: #fff;
-
-  a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-  }
+}
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 /*------------------------tienda---------------------------*/
-
 .Titulo {
   text-align: center;
   text-decoration: underline;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .Contenedor4 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* Crear 3 columnas de igual ancho */
+  grid-template-columns:  repeat(3, 1fr);
+  /* Crear columnas de ancho mínimo 250px, máximo 1fr (fracción del contenedor) */
   gap: 20px;
-  /* Espacio entre las columnas */
+  width: 100%;
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+  margin-bottom: 10px;
 }
 
 .remera1,
 .remera2,
 .remera3 {
-  text-align: center;
-  /* Alinear el texto al centro */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .remera1 img,
 .remera2 img,
 .remera3 img {
-  width: 375px;
+  width: 100%;
   /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
-  height: 500px;
+  height: auto;
   /* Mantener la proporción original de la imagen */
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
-  /* Espacio entre la imagen y el párrafo */
 }
 
-.Titulo {
-  text-align: center;
-  text-decoration: underline;
-  font-family: 'Times New Roman', Times, serif;
-
+/* Media query para ajustar el tamaño de las imágenes en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .remera1 img,
+  .remera2 img,
+  .remera3 img {
+    width: 100%; /* Hacer que las imágenes ocupen el 100% del ancho de su contenedor en pantallas más pequeñas */
+    height: auto; /* Mantener la proporción original de la imagen */
+  }
 }
+
+
+
 
 /*-----------------SUSCRIPCIÓN--------------*/
-
 .boton {
   background-color: black;
   text-align: justify;
-
 }
 
 .boton p {
   color: whitesmoke;
 }
 
-
-
 /*-----SECCION SUBSCRIPCIÓN---*/
-
-
 form {
   border: 4px solid #f1f1f1;
 }
-
 
 .container {
   padding: 20px;
   background-color: #f1f1f1;
 }
-
 
 input[type=text],
 input[type=submit] {
@@ -354,11 +330,9 @@ input[type=submit] {
   box-sizing: border-box;
 }
 
-
 input[type=checkbox] {
   margin-top: 16px;
 }
-
 
 input[type=submit] {
   background-color: #d60707;
@@ -373,19 +347,19 @@ input[type=submit]:hover {
   opacity: 0.8;
 }
 
-
-
-
 /*---------------FOOTER------------------*/
-
 .pie a {
-  color: white
+  color: white;
 }
 
-
 .pie a {
+  justify-content: space-around;
   text-decoration: none;
   color: white;
   /* Puedes cambiar el color según tus preferencias */
-  margin: 5px;
+  margin: 0  ;
 }
+
+
+
+/*# sourceMappingURL=EStilo.css.map */
