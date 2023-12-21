@@ -1,0 +1,9 @@
+@mixin fuente-parrafos ($family,'Times New Roman') 
+{ font-family: $family;
+color: $color;
+}
+
+
+h2 {
+    @include fuente-parrafos('times new roman');
+}

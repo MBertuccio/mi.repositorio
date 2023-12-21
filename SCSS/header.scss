@@ -1,25 +1,25 @@
-/*----------------------------------------------Estilo del header------------------------ */
 header {
+  text-align: center;
+  text-decoration: underline;
+}
 
-    text-align: center;
-    text-decoration: underline;
+.Titulo {
+  background-color: whitesmoke;
   
-  }
-  
-  .Titulo {
-    background-color: whitesmoke
-  }
-  
-  .Titulo h2 {
-    font-family: 'Times New Roman', Times, serif;
-    color: black
-  }
-  
-  /* -------------------Links dentro del header ---------------MODIFICAR PARA QUE ESTEN ARRIBA A LA DEREHCA---------*/
-  .links {
-    background-color: black;
-    color: white !important;
-    font-family: 'Times New Roman', Times, serif
-  }
-  
-  
+}
+
+.Titulo h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+
+/* -------------------Links dentro del header ---------------A---------*/
+.links {
+  background-color: black;
+  color: white !important;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.links:hover {
+  color: red !important;
+}

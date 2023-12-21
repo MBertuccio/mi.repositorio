@@ -1,13 +1,16 @@
 /*---------------FOOTER------------------*/
+.pie a {
+  color: white;
+}
+
+.pie a:hover {
+  color: red !important;
+}
+
 
 .pie a {
-    color: white
-  }
-  
-  
-  .pie a {
-    text-decoration: none;
-    color: white;
-    /* Puedes cambiar el color según tus preferencias */
-    margin: 5px;
-  }
+  text-decoration: none;
+  color: white;
+  /* Puedes cambiar el color según tus preferencias */
+  margin: 5px;
+}

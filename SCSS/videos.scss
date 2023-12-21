@@ -1,63 +1,75 @@
-/*------------------------------seccion video--------------------------------*/
-
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-  }
-  
-  section {
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  .titulonoticia {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  h1 {
-    color: #333;
-    text-decoration: underline;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  h2 {
-    color: #666;
-  }
-  
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+section {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.titulonoticia {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+  color: #666;
+}
+
+.contenedor3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.video1,
+.video2,
+.video3 {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Mantenemos el zoom en el hover */
+.video1:hover,
+.video2:hover,
+.video3:hover {
+  transform: scale(1.2);
+}
+
+iframe {
+  width: 100%;
+}
+
+p {
+  color: #777;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Hacer responsive */
+@media (max-width: 768px) {
   .contenedor3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .video1,
-  .video2,
-  .video3 {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  iframe {
-    width: 100%;
-  }
-  
-  p {
-    color: #777;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    color: #fff;
-  
-    a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-  }
-  
+}

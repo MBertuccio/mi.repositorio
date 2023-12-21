@@ -1,42 +1,56 @@
-------------------------tienda---------------------------*/
-
 .Titulo {
   text-align: center;
   text-decoration: underline;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .Contenedor4 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* Crear 3 columnas de igual ancho */
   gap: 20px;
-  /* Espacio entre las columnas */
 }
 
 .remera1,
 .remera2,
 .remera3 {
   text-align: center;
-  /* Alinear el texto al centro */
+  overflow: hidden; /* Asegura que el contenido no se desborde */
 }
 
 .remera1 img,
 .remera2 img,
 .remera3 img {
   width: 375px;
-  /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
   height: 500px;
-  /* Mantener la proporción original de la imagen */
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
-  /* Espacio entre la imagen y el párrafo */
+  transition: transform 0.3s ease-in-out; /* Agregamos una transición suave */
+
+  /* Mantenemos el zoom en el hover */
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
-.Titulo {
-  text-align: center;
-  text-decoration: underline;
-  font-family: 'Times New Roman', Times, serif;
+/* Hacer responsive */
+@media (max-width: 768px) {
+  .Contenedor4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .remera1,
+  .remera2,
+  .remera3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .remera1 img,
+  .remera2 img,
+  .remera3 img {
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+  }
 }

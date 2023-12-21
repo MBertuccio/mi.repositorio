@@ -1,12 +1,19 @@
 /*# sourceMappingURL=EStilo.css.map */
 
-@import 'noticias';
-@import 'general';
-@import 'tours';
-@import 'footer';
-@import 'videos';
-@import 'tienda';
-@import 'suscripcion';
-@import 'header';
+@import '../SCSS/noticias.scss';
+@import '../SCSS/general.scss';
+@import '../SCSS/tours.scss';
+@import '../SCSS/tours.scss';
+@import '../SCSS/videos.scss';
+@import '../SCSS/tienda.scss'; 
+@import '../SCSS/suscripcion.scss';
+@import '../SCSS/header.scss';
+
+
+/*EXTEND PARA TITULOS*/
+.titulonoticias {
+    font-family: 'Times New Roman', Times, serif;
+    @extend .titulo
+}
 
 
