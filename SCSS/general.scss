@@ -1,0 +1,72 @@
+body {
+    background-color: whitesmoke;
+    color: black;
+    font-family: Arial, sans-serif;
+    /* Fuente predeterminada para el cuerpo  */
+  }
+  
+  /* Estilo para las secciones */
+  section {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 6px;
+  }
+  
+  .lista {
+    list-style: none;
+  }
+  
+  /* Estilo para los títulos de sección */
+  h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+  
+  
+  }
+  
+  h2 {
+    font-family: "Arial", sans-serif;
+    color: black;
+  
+  }
+  
+  h3 {
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+  
+  }
+  
+  /* Estilos para otros elementos si es necesario */
+  p {
+    font-family: Arial, sans-serif;
+    /* Fuente para párrafos */
+  }
+  
+  a {
+    color: black;
+    /* Color de enlaces negro */
+    text-decoration: none;
+  }
+  
+  /* Estilo para el footer */
+  footer {
+    background-color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilo para los enlaces en el footer */
+  footer a {
+    color: black;
+    /* Color de enlaces verde en el negro */
+    text-decoration: none;
+    margin: 5px;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .title {
+    size: 20px;
+  
+  }

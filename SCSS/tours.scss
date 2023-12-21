@@ -1,0 +1,39 @@
+.titulo {
+  text-align: center;
+  text-decoration: underline;
+
+}
+
+.contenedor2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Crear 3 columnas de igual ancho */
+  gap: 20px;
+}
+
+.tour1,
+.tour2,
+.tour3 {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tour1 img,
+.tour2 img,
+.tour3 img {
+  width: 100%;
+  /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
+  height: auto;
+  /* Mantener la proporción original de la imagen */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* Espacio entre la imagen y el párrafo */
+}
+
+.tour1 p,
+.tour2 p,
+.tour3 p {
+  width: 100%;
+  font-style: normal;
+}

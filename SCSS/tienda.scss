@@ -1,0 +1,42 @@
+------------------------tienda---------------------------*/
+
+.Titulo {
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Contenedor4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Crear 3 columnas de igual ancho */
+  gap: 20px;
+  /* Espacio entre las columnas */
+}
+
+.remera1,
+.remera2,
+.remera3 {
+  text-align: center;
+  /* Alinear el texto al centro */
+}
+
+.remera1 img,
+.remera2 img,
+.remera3 img {
+  width: 375px;
+  /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
+  height: 500px;
+  /* Mantener la proporción original de la imagen */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* Espacio entre la imagen y el párrafo */
+}
+
+.Titulo {
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+
+}

@@ -23,6 +23,8 @@ section {
 h1 {
   font-family: "Times New Roman", Times, serif;
   color: black;
+
+
 }
 
 h2 {
@@ -76,6 +78,7 @@ header {
 
 .Titulo {
   background-color: whitesmoke;
+  
 }
 
 .Titulo h2 {
@@ -83,12 +86,17 @@ header {
   color: black;
 }
 
-/* -------------------Links dentro del header ---------------MODIFICAR PARA QUE ESTEN ARRIBA A LA DEREHCA---------*/
+/* -------------------Links dentro del header ---------------A---------*/
 .links {
   background-color: black;
   color: white !important;
   font-family: "Times New Roman", Times, serif;
 }
+
+.links:hover {
+  color: red !important;
+}
+
 
 /*------------------------------------ Sección Noticias------------------------------*/
 /*titulo*/
@@ -97,6 +105,10 @@ header {
   text-decoration: underline;
   font-size: large;
   font-family: "Times New Roman", Times, serif;
+
+  &:hover {
+    color: red
+  }
 }
 
 /*formato del contenedor*/
@@ -150,6 +162,30 @@ header {
   width: 100%;
 }
 
+.contenedor2 .foto1,
+.contenedor2 .foto2,
+.contenedor2 .foto3 {
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+.contenedor2 .foto1 img,
+.contenedor2 .foto2 img,
+.contenedor2 .foto3 img {
+  transition: transform 0.3s ease-in-out; /* Agregamos una transición suave */
+}
+
+/* Aplicamos el zoom al hacer hover sobre las imágenes */
+.contenedor2 .foto1:hover img,
+.contenedor2 .foto2:hover img,
+.contenedor2 .foto3:hover img {
+  transform: scale(1.2);
+}
+
+
+
+
+
+
 /*-----------------------------------------------seccion GIRAS -----------------------------------*/
 .titulo {
   text-align: center;
@@ -159,7 +195,6 @@ header {
 .contenedor2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* Crear 3 columnas de igual ancho */
   gap: 20px;
 }
 
@@ -168,19 +203,23 @@ header {
 .tour3 {
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden; /* Asegura que el contenido no se desborde */
 }
 
 .tour1 img,
 .tour2 img,
 .tour3 img {
   width: 100%;
-  /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
   height: auto;
-  /* Mantener la proporción original de la imagen */
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
-  /* Espacio entre la imagen y el párrafo */
+  transition: transform 0.3s ease-in-out; /* Agregamos una transición suave */
+
+  /* Mantenemos el zoom en el hover */
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .tour1 p,
@@ -189,6 +228,20 @@ header {
   width: 100%;
   font-style: normal;
 }
+
+/* Hacer responsive */
+@media (max-width: 768px) {
+  .contenedor2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tour1,
+  .tour2,
+  .tour3 {
+    margin-bottom: 20px;
+  }
+}
+
 
 /*------------------------------seccion video--------------------------------*/
 body {
@@ -230,6 +283,14 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Mantenemos el zoom en el hover */
+.video1:hover,
+.video2:hover,
+.video3:hover {
+  transform: scale(1.2);
 }
 
 iframe {
@@ -245,11 +306,21 @@ footer {
   padding: 10px;
   color: #fff;
 }
+
 footer a {
   color: #fff;
   margin: 0 10px;
   text-decoration: none;
 }
+
+/* Hacer responsive */
+@media (max-width: 768px) {
+  .contenedor3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 
 /*------------------------tienda---------------------------*/
 .Titulo {
@@ -260,44 +331,54 @@ footer a {
 
 .Contenedor4 {
   display: grid;
-  grid-template-columns:  repeat(3, 1fr);
-  /* Crear columnas de ancho mínimo 250px, máximo 1fr (fracción del contenedor) */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 100%;
-  box-sizing: border-box; /* Incluir padding y border en el ancho total */
-  margin-bottom: 10px;
 }
 
 .remera1,
 .remera2,
 .remera3 {
-  width: 100%;
-  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden; /* Asegura que el contenido no se desborde */
 }
 
 .remera1 img,
 .remera2 img,
 .remera3 img {
-  width: 100%;
-  /* Hacer que las imágenes ocupen el 100% del ancho de la columna */
-  height: auto;
-  /* Mantener la proporción original de la imagen */
+  width: 375px;
+  height: 500px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
-}
+  transition: transform 0.3s ease-in-out; /* Agregamos una transición suave */
 
-/* Media query para ajustar el tamaño de las imágenes en pantallas más pequeñas */
-@media screen and (max-width: 768px) {
-  .remera1 img,
-  .remera2 img,
-  .remera3 img {
-    width: 100%; /* Hacer que las imágenes ocupen el 100% del ancho de su contenedor en pantallas más pequeñas */
-    height: auto; /* Mantener la proporción original de la imagen */
+  /* Mantenemos el zoom en el hover */
+  &:hover {
+    transform: scale(1.2);
   }
 }
 
+/* Hacer responsive */
+@media (max-width: 768px) {
+  .Contenedor4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .remera1,
+  .remera2,
+  .remera3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .remera1 img,
+  .remera2 img,
+  .remera3 img {
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+  }
+}
 
 
 /*-----------------SUSCRIPCIÓN--------------*/
@@ -352,14 +433,16 @@ input[type=submit]:hover {
   color: white;
 }
 
-.pie a {
-  justify-content: space-around;
-  text-decoration: none;
-  color: white;
-  /* Puedes cambiar el color según tus preferencias */
-  margin: 0  ;
+.pie a:hover {
+  color: red !important;
 }
 
 
+.pie a {
+  text-decoration: none;
+  color: white;
+  /* Puedes cambiar el color según tus preferencias */
+  margin: 5px;
+}
 
-/*# sourceMappingURL=EStilo.css.map */
+/*# sourceMappingURL=Estilo.css.map */
